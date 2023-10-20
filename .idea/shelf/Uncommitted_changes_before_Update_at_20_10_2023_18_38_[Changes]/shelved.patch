@@ -1,0 +1,137 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Examen.java
+rename from src/Main.java
+rename to src/Examen.java
+--- a/src/Main.java	(revision d361af340eee5046aa202689d836742dd6509de5)
++++ b/src/Examen.java	(date 1697819754599)
+@@ -1,5 +1,67 @@
+-public class Main {
++import java.util.Scanner;
++
++public class Examen {
+     public static void main(String[] args) {
+-        System.out.println("Hello world!");
++
++
++        // 1. Crear un proyecto en IntelliJ con el nombre OctubreExamen.
++        // 2. Crear el repositorio en Git Hub.
++        // 3. Hay que declarar tres variables, una entera con el nombre edad=18.
++        // 3. Otra double con el nombre sueldo=1200 y otra char con el nombre sexo=M, mostrar en consola.
++        int edad = 18;
++        double sueldo = 1_200;
++        char sexo = 'M';
++        System.out.println("La edad es " + edad);
++        System.out.println("El suelda es " + sueldo);
++        System.out.println("El sexo es " + sexo);
++
++        // 4. Definir dos variables, la primera de apellido con valor "Ruiz", la otra boolean con valor verdadero. Mostrar C.
++        String apellido = "Ruiz";
++        boolean verdadero;
++        verdadero = true;
++        System.out.println("El apellido " + apellido);
++        System.out.println("el valor es " + verdadero);
++
++        // 5. Definir una variable numerica para guardar la hora de 0 a 24.
++        // 5. Escribir en la consola Buenos dias si la hora esta entre 0-12, y el resto buenas noches.
++        int hora = 16;
++        System.out.println("¿Que hora es? " + hora);
++        if (hora <= 12) {
++            System.out.println("Buenos días");
++        } else {
++            System.out.println("Buenas noches");
++
++        // 6. Solicitar por consola el precio de un producto y mostralo en la consola.
++        // 6. Definir una variable de tipo double con el nombre precio.
++            Scanner teclado = new Scanner(System.in);
++            double precio;
++            System.out.println("Escribe el precio -> ");
++            precio = teclado.nextDouble();
++
++        // 7. Mostrar en la consola del 0 al 10.
++            System.out.println("Mostrar numeros de 10 al 0 ");
++            for (int i =10; i >=10; i--) {
++                System.out.println(i);
++
++        // 8. Solicitar por consola el DNI, nombre y direccion, mostrar en la cosola el siguiente texto:
++        //    nombre: xxxxxx con DNI: xxxxx y vive en xxxxx.
++               Scanner tecladoEntrada =new Scanner(System.in) ;
++               String nombre, DNI, direccion;
++
++                System.out.println("Escriba el nombre ");
++                nombre=tecladoEntrada.next();
++                System.out.println("Escriba el DNI ");
++                DNI= teclado.next();
++                System.out.println("Escriba el dirección ");
++                direccion= teclado.next();
++                System.out.println("El nombre: " + nombre + ". El DNI es: " + DNI + ". La direccion es: " + direccion);
++
++
++
++
++            }
++
++
++        }
+     }
+-}
+\ No newline at end of file
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"bef4c2fe-5333-47b5-a63e-171bb2aa973a\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 2\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2X1s8nPLTpTWa9SeWIUAwuWzaxQ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"bef4c2fe-5333-47b5-a63e-171bb2aa973a\" name=\"Changes\" comment=\"\" />\r\n      <created>1697807764410</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1697807764410</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d361af340eee5046aa202689d836742dd6509de5)
++++ b/.idea/workspace.xml	(date 1697809043124)
+@@ -1,7 +1,13 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bef4c2fe-5333-47b5-a63e-171bb2aa973a" name="Changes" comment="" />
++    <list default="true" id="bef4c2fe-5333-47b5-a63e-171bb2aa973a" name="Changes" comment="Initial commit">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Examen.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -35,6 +41,28 @@
+       <option name="presentableId" value="Default" />
+       <updated>1697807764410</updated>
+     </task>
++    <task id="LOCAL-00001" summary="Initial commit">
++      <option name="closed" value="true" />
++      <created>1697807864945</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1697807864945</updated>
++    </task>
++    <task id="LOCAL-00002" summary="Initial commit">
++      <option name="closed" value="true" />
++      <created>1697807874123</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1697807874123</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="ok" />
++    <MESSAGE value="Initial commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
++  </component>
+ </project>
+\ No newline at end of file
